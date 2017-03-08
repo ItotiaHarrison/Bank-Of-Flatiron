@@ -4,7 +4,7 @@ class Transaction extends Component  {
 
   render() {
     return (
-      <tr key={this.props.transaction.id}>
+      <tr>
         <td>{this.props.transaction.posted_at}</td>
         <td>{this.props.transaction.description}</td>
         <td>{this.props.transaction.category}</td>

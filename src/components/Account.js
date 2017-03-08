@@ -5,7 +5,10 @@ import Search from './Search'
 class Account extends Component {
   constructor() {
     super()
-    this.state = {transactions: []}
+    this.state = {
+      transactions: [],
+      searchTerm: ""
+    }
   }
 
   componentDidMount() {
@@ -17,11 +20,18 @@ class Account extends Component {
     })
   }
 
+  handleChange(event) {
+    this.setState({
+      searchTerm: event.target.value
+    })
+  }
+
   render() {
     let {transactions, searchTerm} = this.state;
+    console.log(searchTerm);
     return (
       <div>
-        <Search />
+        <Search searchTerm={searchTerm} handleChange={this.handleChange.bind(this)} />
         <p className="App-intro">
           Here are your most recent transactions.
         </p>

@@ -5,9 +5,16 @@ class Transactions extends Component {
 
 
   render() {
-    let transactions = this.props.transactions.map((transaction) => (
-      <Transaction transaction={transaction} />
-    ))
+    let transactions = this.props.transactions.filter((transaction) => {
+      if (transaction.description.toLowerCase().includes(this.props.searchTerm.toLowerCase()) ||
+          transaction.category.toLowerCase().includes(this.props.searchTerm.toLowerCase())) {
+        return true
+      } else {
+        return false
+      }
+    }).map(transaction => <Transaction key={transaction.id} transaction={transaction} />)
+
+    console.log(transactions);
     return(
     <table>
       <tbody>
