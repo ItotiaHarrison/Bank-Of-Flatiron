@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Transactions from './Transactions';
 import '../stylesheets/App.css';
 
 class App extends Component {
@@ -11,6 +12,7 @@ class App extends Component {
         <p className="App-intro">
           Here are your most recent transactions.
         </p>
+        <Transactions />
       </div>
     );
   }
