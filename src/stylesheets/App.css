@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.Search {
+  width: 100%;
+  padding: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid gray;
+  text-align: left;
+  font-size: large;
+}
+
+table {
+  width: 100%;
+  padding: 20px;
+}
+
+th, td {
+  text-align: left;
+}
