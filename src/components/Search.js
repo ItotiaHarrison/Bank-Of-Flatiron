@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Search = ({searchTerm, handleChange}) => {
+const Search = (props) => {
+  // Leave for Student TODO: add the 'onChange' handler
+  // and use the handleChange prop
+  // "onChange={handleChange}"
   return (
     <div>
-      <input type="text" value={searchTerm} onChange={handleChange}/>
+      <input type="text" value={props.searchTerm} />
     </div>
   );
 }

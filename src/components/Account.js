@@ -5,38 +5,50 @@ import Search from './Search'
 class Account extends Component {
   constructor() {
     super()
-    this.state = {
-      transactions: [],
-      searchTerm: ""
-    }
+
+    // ** Leave for Student TODO: set an initial state,
+    // bind this
+    //
+    // this.state = {
+    //   transactions: [],
+    //   searchTerm: ""
+    // };
+
+    // this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount() {
-    fetch('http://localhost:3001/transactions')
-    .then((response) => {
-       response.json().then((data) => {
-         this.setState({transactions: data})
-       })
-    })
+    // ** Leave for Student TODO: Make the AJAX Call
+    // ** Question: do we define the lifecycle method??
+    //
+    // fetch('http://localhost:3001/transactions')
+    // .then((response) => {
+    //    response.json().then((data) => {
+    //      this.setState({transactions: data})
+    //    })
+    // })
   }
 
   handleChange(event) {
-    this.setState({
-      searchTerm: event.target.value
-    })
+    // ** Leave for Student TODO: use setState
+    //
+    // this.setState({
+    //   searchTerm: event.target.value
+    // })
   }
 
   render() {
-    let {transactions, searchTerm} = this.state;
-    console.log(searchTerm);
+    // Leave for student TODO: make them fill in the props to pass down
+    // let {transactions, searchTerm} = this.state;
+
     return (
       <div>
-        <Search searchTerm={searchTerm} handleChange={this.handleChange.bind(this)} />
+        <Search searchTerm={...your code here} handleChange={...your code here} />
         <p className="App-intro">
           Here are your most recent transactions.
         </p>
 
-        <Transactions transactions={transactions} searchTerm={searchTerm} />
+        <Transactions transactions searchTerm={...your code here} />
       </div>
     )
   }

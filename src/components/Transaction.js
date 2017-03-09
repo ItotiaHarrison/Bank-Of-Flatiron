@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Transaction extends Component  {
-
-  render() {
-    return (
-      <tr>
-        <td>{this.props.transaction.posted_at}</td>
-        <td>{this.props.transaction.description}</td>
-        <td>{this.props.transaction.category}</td>
-        <td>{this.props.transaction.amount}</td>
-      </tr>
-    )
-  }
+// Leave for Student TODO: pass props to function
+const Transaction = () => {
+  // Leave for Student TODO: use the props to make a presentational component
+  return (
+    <tr>
+      <td>{...your code here}</td>
+      <td>{...your code here}</td>
+      <td>{...your code here}</td>
+      <td>{...your code here}</td>
+    </tr>
+  )
 }
 
 export default Transaction
