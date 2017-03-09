@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
 .App {
   text-align: center;
 }
@@ -9,7 +14,6 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
   padding: 20px;
   color: white;
 }
@@ -18,7 +22,25 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.Search {
+  width: 100%;
+  padding: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+  border: 1px solid gray;
+  text-align: left;
+  font-size: large;
+}
+
+table {
+  width: 100%;
+  padding: 20px;
+}
+
+th, td {
+  text-align: left;
 }
