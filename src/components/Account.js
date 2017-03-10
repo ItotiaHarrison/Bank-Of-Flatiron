@@ -1,57 +1,47 @@
-import React, { Component } from 'react';
-import Transactions from './Transactions';
+import React, { Component } from 'react'
+import Transactions from './Transactions'
 import Search from './Search'
 
+// The data you retrieve from the Rails API will be structured as follows:
+// [
+//   {
+//     id: 1,
+//     posted_at: "2017-02-28 11:00:00",
+//     description: "Leather Pants, Gap co.",
+//     category: "Fashion",
+//     amount: -20000
+//   },
+//   {
+//     id: 2,
+//     posted_at: "2017-02-29 10:30:00",
+//     description: "Paycheck from Bob's Burgers",
+//     category: "Income",
+//     amount: 100000
+//   }
+// ]
+// You can use this dummy data to get the app up and running if you are
+// unable to make the API call
+
 class Account extends Component {
-  constructor() {
-    super()
 
-    // ** Leave for Student TODO: set an initial state,
-    // bind this
-    //
-    // this.state = {
-    //   transactions: [],
-    //   searchTerm: ""
-    // };
-
-    // this.handleChange = this.handleChange.bind(this);
-  }
-
-  componentDidMount() {
-    // ** Leave for Student TODO: Make the AJAX Call
-    // ** Question: do we define the lifecycle method??
-    //
-    // fetch('http://localhost:3001/transactions')
-    // .then((response) => {
-    //    response.json().then((data) => {
-    //      this.setState({transactions: data})
-    //    })
-    // })
-  }
 
   handleChange(event) {
-    // ** Leave for Student TODO: use setState
-    //
-    // this.setState({
-    //   searchTerm: event.target.value
-    // })
+    //... your code here
   }
 
   render() {
-    // Leave for student TODO: make them fill in the props to pass down
-    // let {transactions, searchTerm} = this.state;
 
     return (
       <div>
-        <Search searchTerm={...your code here} handleChange={...your code here} />
+        <Search searchTerm={""} handleChange={"...your code here"} />
         <p className="App-intro">
           Here are your most recent transactions.
         </p>
 
-        <Transactions transactions searchTerm={...your code here} />
+        <Transactions transactions={[]} searchTerm={""} />
       </div>
     )
   }
 }
 
-export default Account;
+export default Account

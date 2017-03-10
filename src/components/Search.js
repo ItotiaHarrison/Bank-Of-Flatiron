@@ -1,14 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-const Search = (props) => {
-  // Leave for Student TODO: add the 'onChange' handler
-  // and use the handleChange prop
-  // "onChange={handleChange}"
+const Search = () => {
   return (
     <div>
-      <input type="text" value={props.searchTerm} />
+      <input type="text" value={""} placeholder={"Search your most recent transactions"} />
     </div>
-  );
+  )
 }
 
 export default Search

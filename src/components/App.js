@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import Account from './Account';
+import React, { Component } from 'react'
+import Account from './Account'
 
-import '../stylesheets/App.css';
+import '../stylesheets/App.css'
 
 class App extends Component {
   render() {
@@ -14,8 +14,8 @@ class App extends Component {
         <Account />
 
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
