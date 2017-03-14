@@ -8,7 +8,8 @@ For this project, you’ll be building out a React application that displays a l
 - As a user, you should be able to see a table of transactions.
 - As a user, you should be able to enter text into an input field and filter the list of transactions by either description or category.
 
-![example project](https://s3-us-west-2.amazonaws.com/curriculum-content/web-development/react/react-assessment.gif)
+
+![example project](https://s3-us-west-2.amazonaws.com/curriculum-content/web-development/react/react-assessment-example.gif)
 
 We’ve provided some starter code you can use to guide you, but feel free to create or remove components as you see fit.
 
