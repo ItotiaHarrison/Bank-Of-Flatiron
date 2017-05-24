@@ -14,7 +14,7 @@ When you clone down this project, the React Component `<AccountContainer />` wil
 - As a user, you should be able to see a table of transactions.
 - As a user, you should be able to enter text into an input field and filter the list of transactions by either description or category.
 
-![example project](react-challenge.gif)
+![example project](https://s3-us-west-2.amazonaws.com/curriculum-content/immersive_assessments/react-challenge.gif)
 
 Use the above gif as an example of how the app should function.
 
