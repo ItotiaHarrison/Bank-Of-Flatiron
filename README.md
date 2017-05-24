@@ -14,11 +14,13 @@ When you clone down this project, the React Component `<AccountContainer />` wil
 - As a user, you should be able to see a table of transactions.
 - As a user, you should be able to enter text into an input field and filter the list of transactions by either description or category.
 
-![example project](https://s3-us-west-2.amazonaws.com/curriculum-content/web-development/react/react-assessment-example.gif)
+![example project](react-challenge.gif)
 
-Use the above gif as an example of how the app should function
+Use the above gif as an example of how the app should function.
 
 We’ve provided some starter code you can use to guide you, but feel free to create or remove components as you see fit.
+
+## Criteria
 
 We’ll be evaluating your code based on the following criteria:
 - **React Components:** Does the app resaonably separate responsibilities into components and a have a component hierarchy?
