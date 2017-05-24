@@ -2,8 +2,12 @@ import React from 'react'
 
 const Search = () => {
   return (
-    <div>
-      <input type="text" value={""} placeholder={"Search your most recent transactions"} />
+    <div className="ui huge fluid icon input">
+      <input
+        type="text"
+        placeholder={"Search your Recent Transactions"}
+      />
+      <i className="circular search link icon"></i>
     </div>
   )
 }
