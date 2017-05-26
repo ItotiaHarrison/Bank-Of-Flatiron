@@ -8,7 +8,7 @@
     "semantic-ui-css": "^2.2.10"
   },
   "devDependencies": {
-    "react-scripts": "0.9.4"
+    "react-scripts": "0.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
