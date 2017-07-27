@@ -51,4 +51,4 @@ We’ll be evaluating your code based on the following criteria:
 
 Good luck!
 
-[Backend Rails API](https://github.com/learn-co-curriculum/immersive-assessment-react-backend)
+<!---[Backend Rails API](https://github.com/learn-co-curriculum/immersive-assessment-react-backend)-->
