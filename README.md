@@ -6,7 +6,7 @@ For this project, you’ll be building out a React application that displays a l
 
 Part of what this code challenge is testing is your ability to follow given instructions. While you will definitely have a significant amount of freedom in how you implement the features, be sure to carefully read the directions for setting up the application.
 
-When you clone down this project, the component `<AccountContainer />` will have an initial default state.  Use this data to get the functionality of the app working.  Once that is complete, you can replace that initial state with data you fetch from [this provided API endpoint](https://boiling-brook-94902.herokuapp.com/transactions).
+When you clone down this project, the component `<AccountContainer />` will be importing transactions from a file named transactionsData.  Use this data to get the functionality of the app working.  Once that is complete, you can replace that initial state with data you fetch from [this provided API endpoint](https://boiling-brook-94902.herokuapp.com/transactions).
 
 
  ## Deliverables
@@ -32,7 +32,7 @@ After cloning down the project
 
 You can approach this any way you would like but below is a reasonable approach to this challenge. If you are not sure where or how to begin, follow the steps here.
 
-1) Get the list of Transactions to display on the page given the default state data
+1) Get the list of Transactions to display on the page given the transactions data being imported.
 2) After that is working, replace that data with the JSON you fetch from this url [https://boiling-brook-94902.herokuapp.com/transactions](https://boiling-brook-94902.herokuapp.com/transactions). It will be in the same format as the  default data.
 3) Now that you are using the real data, ensure that the user typing into the input field can appropriately update the state
 4) Using the state of the user input and the list of transactions, figure out how to render only the transactions that include the entered text in either the *description* or *category*
