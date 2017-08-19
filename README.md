@@ -6,7 +6,7 @@ For this project, you’ll be building out a React application that displays a l
 
 Part of what this code challenge is testing is your ability to follow given instructions. While you will definitely have a significant amount of freedom in how you implement the features, be sure to carefully read the directions for setting up the application.
 
-When you clone down this project, the component `<AccountContainer />` will be importing transactions from a file named transactionsData.  Use this data to get the functionality of the app working.  Once that is complete, you can replace that initial state with data you fetch from [this provided API endpoint](https://boiling-brook-94902.herokuapp.com/transactions).
+When you clone down this project, the component `<AccountContainer />` will be importing transactions from `src/transactionsData`.  Use this data to get the functionality of the app working.  Once that is complete, you can replace that initial state with data you fetch from [this provided API endpoint](https://boiling-brook-94902.herokuapp.com/transactions).
 
 
  ## Deliverables
