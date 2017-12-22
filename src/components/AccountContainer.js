@@ -22,8 +22,8 @@ class AccountContainer extends Component {
 
     return (
       <div>
-        <Search searchTerm={"...add code here..."} handleChange={"...add code here..."} />
-        <TransactionsList transactions={"...add code here..."} searchTerm={"...add code here..."} />
+        <Search />
+        <TransactionsList />
       </div>
     )
   }
