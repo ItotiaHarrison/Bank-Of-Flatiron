@@ -32,6 +32,8 @@ After cloning down the project
 
 You can approach this any way you would like but below is a reasonable approach to this challenge. If you are not sure where or how to begin, follow the steps here.
 
+If you are unfamiliar with HTML tables, take a look at the [docs with an example here](https://www.w3schools.com/html/html_tables.asp)
+
 1) Get the list of Transactions to display on the page given the transactions data being imported.
 2) After that is working, replace that data with the JSON you fetch from this url [https://boiling-brook-94902.herokuapp.com/transactions](https://boiling-brook-94902.herokuapp.com/transactions). It will be in the same format as the  default data.
 3) Now that you are using the real data, ensure that the user typing into the input field can appropriately update the state
