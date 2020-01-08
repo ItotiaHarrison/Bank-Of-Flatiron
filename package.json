@@ -3,17 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "semantic-ui-css": "^2.2.10"
-  },
-  "devDependencies": {
-    "react-scripts": "0.9.5"
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "semantic-ui-css": "^2.2.10",
+    "react-scripts": "3.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "json-server --watch db.json & PORT=3001 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

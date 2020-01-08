@@ -1,14 +1,14 @@
 import React from 'react'
+import Transaction from './Transaction'
 
 const TransactionsList = () => {
-
   return (
     <table className="ui celled striped padded table">
       <tbody>
         <tr>
           <th>
             <h3 className="ui center aligned header">
-              Posted At
+              Date
             </h3>
           </th>
           <th>
@@ -27,9 +27,9 @@ const TransactionsList = () => {
             </h3>
           </th>
         </tr>
-
-        {"... your code here..."}
-
+        {
+          /* render Transactions here */
+        }
       </tbody>
     </table>
   )
