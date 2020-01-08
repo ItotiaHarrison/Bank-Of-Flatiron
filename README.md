@@ -13,7 +13,7 @@ Part of what this code challenge is testing is your ability to follow given inst
 ## Setup
 After cloning down the project
 - Run `npm install` in your terminal
-- Run `npm start` and a JSON server will spin up a mock back-end API and you can access the data at `http://localhost:3000/transactions`. Your react application will also start, on port 3001.
+- Run `npm start` and a JSON server will spin up a mock back-end API and you can access the data at `http://localhost:3000/transactions`. Your react application will also start, on port `3001`.
 - The app uses [Semantic UI](https://semantic-ui.com/) for styling. If you see any unfamiliar classNames on some components, don't sweat! That's coming from Semantic UI and you shouldn't need to touch it.
 - If you are unfamiliar with HTML tables, take a look at the [docs with an example here](https://www.w3schools.com/html/html_tables.asp)
 
@@ -25,7 +25,7 @@ After cloning down the project
 
 ## Advanced Deliverables
 
-If you have finished the Core Deliverables, **stage a commit at this point!**
+>If you have finished the Core Deliverables, **stage a commit at this point!**
 
 - As a user, I can sort transactions alphabetically.
 - As a user, I can delete a transaction which will remove it from the table and delete it from the backend.
