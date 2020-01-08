@@ -1,56 +1,69 @@
-# React Immersive Code Challenge
+# Bank of Flatiron
+
+Welcome to the Bank of Flatiron, where you can trust us with all your financial data! Use the below gif as an example of how the app should function.
+
+![demo](gif goes here)
 
 ## Instructions
 
-For this project, you’ll be building out a React application that displays a list of your recent bank transactions.
+For this project, you’ll be building out a React application that displays a list of your recent bank transactions, among other features.
 
 Part of what this code challenge is testing is your ability to follow given instructions. While you will definitely have a significant amount of freedom in how you implement the features, be sure to carefully read the directions for setting up the application.
 
-When you clone down this project, the component `<AccountContainer />` will be importing transactions from `src/transactionsData`.  Use this data to get the functionality of the app working.  Once that is complete, you can replace that initial state with data you fetch from [this provided API endpoint](https://boiling-brook-94902.herokuapp.com/transactions).
-
-
- ## Deliverables
-
-**Please implement the following user stories:**
-- As a user, you should be able to see a table of transactions.
-- As a user, you should be able to enter text into an input field and dynamically filter the list of transactions by either description or category as you type.
-
-![example project](https://s3-us-west-2.amazonaws.com/curriculum-content/immersive_assessments/react-challenge.gif)
-
-Use the above gif as an example of how the app should function.
-
-
-We’ve provided some starter code you can use to guide you, but feel free to create or remove components as you see fit.
-
 ## Setup
 After cloning down the project
-- run `npm install`
-- You can boot up the server with `npm start`. It will run on `localhost:3000`.
+- Run `npm install` in your terminal
+- Run `npm start` and a JSON server will spin up a mock back-end API and you can access the data at `http://localhost:3000/transactions`. Your react application will also start, on port 3001.
 - The app uses [Semantic UI](https://semantic-ui.com/) for styling. If you see any unfamiliar classNames on some components, don't sweat! That's coming from Semantic UI and you shouldn't need to touch it.
+- If you are unfamiliar with HTML tables, take a look at the [docs with an example here](https://www.w3schools.com/html/html_tables.asp)
 
-## Suggested Workflow
+## Core Deliverables
 
-You can approach this any way you would like but below is a reasonable approach to this challenge. If you are not sure where or how to begin, follow the steps here.
+- As a user, I should be able to see a table of the transactions.
+- As a user, I should be able to fill out and submit the form to add a new transaction. This should add a the new transaction to the table **as well as post the new transaction to the backend API for persistence**.
+- As a user, I should be able to filter transactions by typing into the search bar. Only transactions with a description matching the search term should be shown in the transactions table.
 
-If you are unfamiliar with HTML tables, take a look at the [docs with an example here](https://www.w3schools.com/html/html_tables.asp)
+## Advanced Deliverables
 
-1) Get the list of Transactions to display on the page given the transactions data being imported.
-2) After that is working, replace that data with the JSON you fetch from this url [https://boiling-brook-94902.herokuapp.com/transactions](https://boiling-brook-94902.herokuapp.com/transactions). It will be in the same format as the  default data.
-3) Now that you are using the real data, ensure that the user typing into the input field can appropriately update the state
-4) Using the state of the user input and the list of transactions, figure out how to render only the transactions that include the entered text in either the *description* or *category*
+If you have finished the Core Deliverables, **stage a commit at this point!**
 
+- As a user, I can sort transactions alphabetically.
+- As a user, I can delete a transaction which will remove it from the table and delete it from the backend.
 
-## Criteria
+## Rubric
 
-We’ll be evaluating your code based on the following criteria:
-- **React Components:** Does the app reasonably separate responsibilities into components and a have a component hierarchy?
-- **Props:** Does the app have at least one presentational component that receives props? Does the app pass props down from a higher-level component to a lower one? Does the app make use of passing a functional prop?
-- **State:** Does the app have a search input that responds to changes and calls this.setState?
-- **Lifecycle Methods & API:** Does the app make an AJAX request to the API and return data? Does it set the state of the component within the app with that data within a lifecycle method?
-- **Feature:** Does the app filter the list of transactions?
-- Does the app follow best practices regarding state and component composition?
+### Props & State
 
+1. No code or very little code has been written or the code doesn't run. If it runs, no deliverables have been met. Not managed to set state or pass props successfully.
 
-Good luck!
+2. State is not being set or updated. Props are not being passed down, or you are passing down the right prop but trying to access it incorrectly (wrong name, unnecessary `this`, `state` instead of `props`) or key props are missing. API call does not successfully populate state.
 
-<!---[Backend Rails API](https://github.com/learn-co-curriculum/immersive-assessment-react-backend)-->
+3. State is working. However, it may be in the wrong component, it might be nested oddly or might have some unnecessary state. Props are being passed unnecessarily to components. Functions that change or calculate state are not defined in the component that they are most closely tied to.
+
+4. State works and is held by the lowest common component. No unnecessary state is created. Only the necessary props are being passed down. Functions used to edit state are passed down.
+
+5. Advanced deliverables are met.
+
+### Code Structure/Efficiency
+
+1. No code or very little code has been written or the code doesn't run, i.e. syntax errors, imports missing, etc. If it runs, no deliverables have been met.
+
+2. Starter components have been unnecessarily modified and broken. There is no reference to componentDidMount. Incorrect or unnecessary lifecycle methods are used.
+
+3. Fetch is triggered in the right place. Code is not abstracted into clear methods. Additional components have been added which serve no purpose. Props and variables could be named consistently and descriptively.
+
+4. Components are structured in a logical way. Class components only used when needed, functional components used for everything else. Code is abstracted into clear methods. Used object destructuring and spread operator successfully.
+
+5. Advanced deliverables met. Uses some of the following: destructuring, functional components, spreading, hooks, pure functions, performance is taken into account.
+
+### Rendering
+
+1. No code or very little code has been written or the code doesn't run. If it runs, no deliverables have been met.
+
+2. Did not manage to render everything that was asked for in the deliverables.
+
+3. Renders everything that is asked for in the deliverables. Components could be more abstract/reusable. May have created own components instead of using the components provided.
+
+4. Renders everything that is asked for in the deliverables. Components are abstract/reusable. No unnecessary components were created.
+
+5. Everything from 4 plus extra features were added that are not listed in the deliverables.
