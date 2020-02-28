@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Transaction = () => {
   return (
@@ -8,7 +8,7 @@ const Transaction = () => {
       <td>{"your code here..."}</td>
       <td>{"your code here..."}</td>
     </tr>
-  )
-}
+  );
+};
 
-export default Transaction
+export default Transaction;
