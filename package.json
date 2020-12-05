@@ -1,18 +1,28 @@
 {
-  "name": "immersive-assessment-react-frontend",
+  "name": "react-bayside-bank-of-flatiron-code-challenge",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
     "semantic-ui-css": "^2.2.10",
-    "react-scripts": "3.2.0"
+    "web-vitals": "^0.2.4"
+  },
+  "devDependencies": {
+    "json-server": "^0.15.1"
   },
   "scripts": {
     "start": "json-server --watch db.json -p 6001 & open http://localhost:6001/transactions & PORT=6002 react-scripts start && fg",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
