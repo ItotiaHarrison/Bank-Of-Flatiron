@@ -9,6 +9,6 @@ function Transaction() {
       <td>{"your code here..."}</td>
     </tr>
   );
-};
+}
 
 export default Transaction;

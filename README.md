@@ -16,7 +16,7 @@ After unbundling the project:
 
 1. Run `npm install` in your terminal.
 2. Run `npm run server`. This will run your backend on port `8001`.
-3. Run `npm start`. This will run your React app on port `8000`.
+3. In a new terminal, run `npm start`. This will run your React app on port `8000`.
 
 Make sure to open [http://localhost:8001/transactions](http://localhost:8001/transactions) in the browser to verify that your backend is working before you proceed!
 
@@ -52,7 +52,3 @@ As a user, I should be able to:
 
 - Sort transactions alphabetically by category or description.
 - Delete a transaction which will remove it from the table and delete it from the backend.
-
-## Rubric
-
-You can find the rubric for this assessment [here](https://github.com/learn-co-curriculum/se-rubrics/blob/master/module-4.md).
