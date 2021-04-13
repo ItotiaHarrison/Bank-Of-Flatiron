@@ -28,19 +28,75 @@ If you are unfamiliar with HTML tables, take a look at the [docs with an example
 
 The base URL for your backend is: `http://localhost:8001`
 
-These are the endpoints you might need:
-
-- GET: `/transactions`
-- POST: `/transactions`
-- DELETE: `/transactions/:id`
-
 ## Core Deliverables
 
 As a user, I should be able to:
 
 - See a table of the transactions.
-- Fill out and submit the form to add a new transaction. This should add the new transaction to the table **as well as post the new transaction to the backend API for persistence**.
-- Filter transactions by typing into the search bar. Only transactions with a description matching the search term should be shown in the transactions table.
+- Fill out and submit the form to add a new transaction. This should add the new
+  transaction to the table **as well as post the new transaction to the backend
+  API for persistence**.
+- Filter transactions by typing into the search bar. Only transactions with a
+  description matching the search term should be shown in the transactions
+  table.
+
+### Endpoints for Core Deliverables
+
+#### GET /transactions
+
+Example Response:
+
+```json
+[
+  {
+    "id": 1,
+    "date": "2019-12-01",
+    "description": "Paycheck from Bob's Burgers",
+    "category": "Income",
+    "amount": 1000
+  },
+  {
+    "id": 2,
+    "date": "2019-12-01",
+    "description": "South by Southwest Quinoa Bowl at Fresh & Co",
+    "category": "Food",
+    "amount": -10.55
+  }
+]
+```
+
+#### POST `/transactions`
+
+Required Headers:
+
+```js
+{
+  "Content-Type": "application/json"
+}
+```
+
+Request Object:
+
+```json
+{
+  "date": "string",
+  "description": "string",
+  "category": "string",
+  "amount": number
+}
+```
+
+Example Response:
+
+```json
+{
+  "id": 1,
+  "date": "2019-12-01",
+  "description": "Paycheck from Bob's Burgers",
+  "category": "Income",
+  "amount": 1000
+}
+```
 
 ## Advanced Deliverables
 
@@ -52,3 +108,13 @@ As a user, I should be able to:
 
 - Sort transactions alphabetically by category or description.
 - Delete a transaction which will remove it from the table and delete it from the backend.
+
+### Endpoints for Advanced Deliverables
+
+#### DELETE /transactions/:id
+
+Example Response:
+
+```json
+{}
+```
