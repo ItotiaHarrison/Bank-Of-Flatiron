@@ -1,14 +1,21 @@
 # Bank of Flatiron
 
-Welcome to the Bank of Flatiron, where you can trust us with all your financial data! Use the below gif as an example of how the app should function.
+Welcome to the Bank of Flatiron, where you can trust us with all your financial
+data! Use the below gif as an example of how the app should function.
 
-![demo](./demo.gif)
+![demo](https://curriculum-content.s3.amazonaws.com/phase-2/phase-2-code-challenge-bank-of-flatiron/demo.gif)
+
+> To view in VSCode, right click on the README.md file and select "Open Preview".
 
 ## Instructions
 
-For this project, you’ll be building out a React application that displays a list of your recent bank transactions, among other features.
+For this project, you’ll be building out a React application that displays a
+list of your recent bank transactions, among other features.
 
-Part of what this code challenge is testing is your ability to follow given instructions. While you will definitely have a significant amount of freedom in how you implement the features, be sure to carefully read the directions for setting up the application.
+Part of what this code challenge is testing is your ability to follow given
+instructions. While you will definitely have a significant amount of freedom in
+how you implement the features, be sure to carefully read the directions for
+setting up the application.
 
 ## Setup
 
@@ -18,11 +25,16 @@ After unbundling the project:
 2. Run `npm run server`. This will run your backend on port `8001`.
 3. In a new terminal, run `npm start`. This will run your React app on port `8000`.
 
-Make sure to open [http://localhost:8001/transactions](http://localhost:8001/transactions) in the browser to verify that your backend is working before you proceed!
+Make sure to open
+[http://localhost:8001/transactions](http://localhost:8001/transactions) in the
+browser to verify that your backend is working before you proceed!
 
-The app uses [Semantic UI](https://semantic-ui.com/) for styling. If you see any unfamiliar classNames on some components, don't sweat! That's coming from Semantic UI and you shouldn't need to touch it.
+The app uses [Semantic UI](https://semantic-ui.com/) for styling. If you see any
+unfamiliar classNames on some components, don't sweat! That's coming from
+Semantic UI and you shouldn't need to touch it.
 
-If you are unfamiliar with HTML tables, take a look at the [docs with an example here](https://www.w3schools.com/html/html_tables.asp)
+If you are unfamiliar with HTML tables, take a look at the
+[docs with an example here](https://www.w3schools.com/html/html_tables.asp)
 
 ## Endpoints
 
@@ -100,9 +112,12 @@ Example Response:
 
 ## Advanced Deliverables
 
-These deliverables are not required to pass the code challenge, but if you have the extra time, or even after the code challenge, they are a great way to stretch your skills.
+These deliverables are not required to pass the code challenge, but if you have
+the extra time, or even after the code challenge, they are a great way to
+stretch your skills.
 
-> Note: If you are going to attempt these advanced deliverables, please be sure to have a working commit with all the Core Deliverables first!
+> Note: If you are going to attempt these advanced deliverables, please be sure
+> to have a working commit with all the Core Deliverables first!
 
 As a user, I should be able to:
 
